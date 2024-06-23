@@ -679,6 +679,10 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     border-color: #4D5AE5;
 }
 
+.input-class:focus + .modal-svg {
+    fill:#4D5AE5;
+}
+
 .modal-svg {
     position: absolute;
     left: 16px;
@@ -687,9 +691,7 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.input-class:focus + .modal-svg {
-    fill:#4D5AE5;
-}
+
 
 .modal-comment {
     margin-bottom: 16px;
@@ -737,11 +739,6 @@ box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.1
     justify-content: center;
     fill:transparent;
 }
-
-.check-svg {
-
-}
-
 .modal-check.visually-hidden:checked + .privacy-span {
     background-color: #404bbf;
     border: none;
