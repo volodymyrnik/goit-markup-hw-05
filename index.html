@@ -354,17 +354,6 @@
       </section>    
     </main>
 
-    <div class="modal-overlay">
-      <div class="modal">
-        <form class="modal-form">
-          <fieldset>
-            <legend>Leave your contacts and we will call you back</legend>
-            <input type="text" name="name" />
-          </fieldset>
-        </form>
-        <button type="submit">Send</button>
-      </div>
-    </div>
 
 
     <!-- footer -->
@@ -413,18 +402,38 @@
           </li>
         </ul>
       </div>
-      </div>
       <div class="subscribe-section">
-        <form class="form" name="subscribe" autocomplete="off">
+        <p class="subscribe-text">Subscribe</p>
+        <form class="subscribeform">
         <label class="subscribelabel">
-          Subscribe
           <input class="subscribe-form" type="email" name="email" placeholder="E-mail"/>
         </label>
         <button class="subscribe-button">
           Subscribe
+          <svg class="svg-subscribe" width="24" height="24">
+            <use href="./images/icons.svg#icon-send"></use>
+          </svg>
         </button>
         </form>
       </div>
-    </footer>
+    </div>
+          </footer>
+
+
+     <!-- modal window -->
+         
+          <div class="modal-overlay">
+            <div class="modal">
+                <button class="modal-button" type="button">
+                  <svg class="close-modal" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                  </svg>
+                </button>
+                <p class="modal-text">Leave your contacts and we will call you back</p>
+              <button type="submit">Send</button>
+            </div>
+          </div>
+      
+
   </body>
 </html>
